@@ -32,7 +32,9 @@ export default {
         warning: "#F1C40F",
         danger: "#E74C3C",
         dark_mode: "#191919",
-        light_mode: "#FFFFFF",
+        light_mode: "#f5f1f1",
+        darkContent: "#A7A7A7",
+        darkContentHover: "#413f3f"
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],

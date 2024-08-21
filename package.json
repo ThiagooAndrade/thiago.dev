@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "portfolio": "file:",
-    "vue": "^3.4.35"
+    "vue": "^3.4.35",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",
