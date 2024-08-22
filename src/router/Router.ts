@@ -4,11 +4,11 @@ import Home from "../views/Home.vue";
 
 
 const routes = [
-    { path: '/home', component: Home },
-    { path: '/', component: Home },
-    { path: '/about', component: About }
+  { path: '/home', component: Home },
+  { path: '/about', component: About },
+  { path: '/', component: Home },
 ]
 
 export const router = createRouter({
-    history: createMemoryHistory(), routes
+  history: createMemoryHistory(), routes
 })
