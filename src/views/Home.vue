@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import thiagoPhoto from '/thiagoPhoto.jpeg';
+import meuTempoImage from '/meutempo.png';
+
 
 const props = defineProps<{
     isDarkMode: boolean
@@ -81,12 +83,12 @@ function themeModeClass() {
         <h3 :class="'font-bold text-xl ' + themeModeClass().titleColor">Projects</h3>
       </div>
       <div class="mt-20">
-        <div class="rounded-md bg-[#363636]">
+        <div class="rounded-b-md max-w-[360px] bg-[#363636]">
           <picture>
-            <img src="" alt="">
+            <img class="rounded-t-md" :src="meuTempoImage" alt="">
           </picture>
           <div class="p-4 flex flex-col gap-2">
-            <h3 :class="'text-lg ' + themeModeClass().projectTitleColor">Título do projeto</h3>
+            <h3 :class="'text-lg ' + themeModeClass().projectTitleColor">Meu tempo</h3>
             <p class="text-darkContent text-xs">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, deleniti.</p>
             <p :class="'text-xs ' + themeModeClass().titleColor">Tech stack: HTML, JAVASCRIPT, SASS, REACT</p>
             <div class="flex justify-between items-center">
