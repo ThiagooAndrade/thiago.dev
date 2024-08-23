@@ -1,17 +1,19 @@
 <script setup lang="ts">
+import { inject, ref } from 'vue';
+import { themeColor, themeColorType } from '../context/keys';
 import thiagoPhoto from '/thiagoPhoto.jpeg';
-import meuTempoImage from '/meutempo.png';
+import Projects from '../components/Projects.vue';
 
-const props = defineProps<{
-    isDarkMode: boolean
-}>();
+const themeMode = ref(inject<themeColorType>(themeColor) as themeColorType);
+
+console.log(themeMode.value.isDarkMode)
 
 function themeModeClass() {
     return {
-        titleColor: props.isDarkMode ? "text-gray-200" : "text-[#42446E]",
-        
+        titleColor: themeMode.value.isDarkMode ? "text-gray-200" : "text-[#42446E]"
     }
 }
+
 
 </script>
 
@@ -35,7 +37,7 @@ function themeModeClass() {
         <h3 :class="'font-bold text-xl mb-2  ' + themeModeClass().titleColor">My Tech Stack</h3>
         <p class="text-darkContent">tecnologias que tenho trabalhado recentemente</p>
       </div>
-      <ul class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-9 grid-flow-row place-items-center gap-4 md:gap-16 overflow-hidden *:flex *:justify-center">  
+      <ul class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-9 grid-flow-row place-items-center gap-4 md:gap-16 px-1 overflow-hidden *:flex *:justify-center">  
         <li>
           <ion-icon class="fill-red-600 w-10 h-10" name="logo-html5"></ion-icon>
         </li>
@@ -71,6 +73,6 @@ function themeModeClass() {
         </li>
       </ul>
     </section>
-    
+    <Projects/>
   </main> 
 </template>
