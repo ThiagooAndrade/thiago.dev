@@ -51,6 +51,9 @@ export default {
         openingModal: "openingModal 0.5s ease-in forwards",
         closingModal: "closingModal 0.5s ease-in-out forwards",
         slideTech: "slideTech 5s linear infinite",
+      },
+      boxShadow: {
+        'projectContainer': '0 0px 100px -50px rgba(0, 0, 0, 0.3)'
       }
     },
   },
