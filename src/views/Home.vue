@@ -73,6 +73,8 @@ function themeModeClass() {
         </li>
       </ul>
     </section>
-    <Projects/>
+    <section class="mt-20">
+      <!-- projects -->
+    </section>
   </main> 
 </template>
