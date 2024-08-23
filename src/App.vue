@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { ref} from 'vue';
-import Header from './components/Header.vue';
+import { provide, ref} from 'vue';
 import { RouterView } from 'vue-router';
+import { themeColor } from './context/keys';
+import Header from './components/Header.vue';
 
 const isDarkMode = ref(true);
 
@@ -16,10 +17,14 @@ function toggleThemeMode() {
   console.log("isDarkMode: " + isDarkMode.value)  
 }
 
+provide(themeColor, {
+  isDarkMode,
+  toggleThemeMode
+})
 </script>
 
 <template>
-  <main :class="'w-full h-full ' + bodyClass()">
+  <main :class="'w-full h-full overflow-hidden  ' + bodyClass()">
     <Header :is-dark-mode="isDarkMode"/>
     <button class="absolute top-0 bg-red-800 p-1 rounded-md" @click="toggleThemeMode">theme</button>
     <RouterView :is-dark-mode="isDarkMode"/>
