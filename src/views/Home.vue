@@ -73,6 +73,11 @@ function themeModeClass() {
         </li>
       </ul>
     </section>
-    <Projects/>
+    <section class="mt-20">
+      <!-- projects -->
+       <div class="text-center">
+        <h3 :class="'font-bold text-xl ' + themeModeClass().titleColor">Projects</h3>
+      </div>
+    </section>
   </main> 
 </template>
