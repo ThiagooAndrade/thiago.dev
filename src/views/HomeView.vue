@@ -2,7 +2,7 @@
 import { inject, ref } from 'vue';
 import { themeColor, themeColorType } from '../context/keys';
 import thiagoPhoto from '/thiagoPhoto.jpeg';
-import Projects from '../components/Projects.vue';
+import Projects from '../components/Project.vue';
 
 const themeMode = ref(inject<themeColorType>(themeColor) as themeColorType);
 
@@ -75,9 +75,10 @@ function themeModeClass() {
     </section>
     <section class="mt-20">
       <!-- projects -->
-       <div class="text-center">
+      <div class="text-center">
         <h3 :class="'font-bold text-xl ' + themeModeClass().titleColor">Projects</h3>
       </div>
+      <Projects/>
     </section>
   </main> 
 </template>
