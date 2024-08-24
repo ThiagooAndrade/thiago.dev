@@ -4,6 +4,7 @@ import { themeColor } from '../context/keys';
 import { themeColorType } from '../types/Types';
 import thiagoPhoto from '/thiagoPhoto.jpeg';
 import Projects from '../components/Project.vue';
+import { projectsData } from '../data/ProjectsData';
 
 const themeMode = ref(inject<themeColorType>(themeColor) as themeColorType);
 
@@ -79,7 +80,17 @@ function themeModeClass() {
       <div class="text-center">
         <h3 :class="'font-bold text-xl ' + themeModeClass().titleColor">Projects</h3>
       </div>
-      <Projects/>
+      <div class="mt-20 grid grid-flow-row place-items-center gap-10 md:grid-cols-2 xl:grid-cols-3">
+        <Projects v-for="project in projectsData" 
+          :key="project.title" 
+          :title="project.title" 
+          :description="project.description" 
+          :img="project.img"
+          :live-preview="project.livePreviewUrl"
+          :github-url="project.githubUrl"
+          :stack="project.stack"
+        />
+      </div>
     </section>
   </main> 
 </template>
