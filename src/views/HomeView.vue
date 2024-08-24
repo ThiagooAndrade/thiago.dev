@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { inject, ref } from 'vue';
-import { themeColor, themeColorType } from '../context/keys';
+import { themeColor } from '../context/keys';
+import { themeColorType } from '../types/Types';
 import thiagoPhoto from '/thiagoPhoto.jpeg';
 import Projects from '../components/Project.vue';
 

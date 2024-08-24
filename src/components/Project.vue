@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { inject, ref } from 'vue';
-import { themeColor, themeColorType } from '../context/keys';
-import meuTempoImage from '/meutempo.png';
+import { themeColor } from '../context/keys';
+import { projectsDataType, themeColorType } from '../types/Types';
+
+const props = defineProps<projectsDataType>();
 
 const themeMode = ref(inject<themeColorType>(themeColor) as themeColorType);
 
@@ -21,7 +23,7 @@ function themeModeClass() {
       <div class="mt-20 grid grid-flow-row place-items-center md:grid-cols-2 xl:grid-cols-3">
         <div :class="'rounded-lg max-w-[250px] shadow-projectContainer shadow-black ' + themeModeClass().projectBackgroundColor">
           <picture>
-            <img class="rounded-t-lg max-w-[250px] h-auto block" :src="meuTempoImage" alt="">
+            <img class="rounded-t-lg max-w-[250px] h-auto block" src="/meutempo.png" alt="">
           </picture>
           <div class="p-4 flex flex-col gap-2">
             <h3 :class="'text-lg ' + themeModeClass().projectTitleColor">Meu tempo</h3>
