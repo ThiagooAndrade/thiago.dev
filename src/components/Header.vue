@@ -1,19 +1,20 @@
 <script setup lang="ts">
+import { inject, ref } from 'vue';
 import { RouterLink } from 'vue-router';
+import { themeColorType } from '../types/Types';
+import { themeColor } from '../context/keys';
 
 
-const props = defineProps<{
-    isDarkMode: boolean
-}>();
+const themeMode = ref(inject<themeColorType>(themeColor) as themeColorType)
 
 function themeModeClass() {
     return {
-        iconColor: props.isDarkMode ? '#A7A7A7' : "#212020",
-        titleColor: props.isDarkMode ? 'text-gray-100' : "text-[#000000]",
-        paragraphColor: props.isDarkMode ? '#413f3f' : "#"
+        iconColor: themeMode.value.isDarkMode ? '#A7A7A7' : "#212020",
+        titleColor: themeMode.value.isDarkMode ? 'text-gray-100' : "text-[#000000]",
+        paragraphColor: themeMode.value.isDarkMode ? '#413f3f' : "#"
     }
 }
-    
+
 </script>
 
 <template>
