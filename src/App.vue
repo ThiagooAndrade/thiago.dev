@@ -3,6 +3,7 @@ import { provide, ref} from 'vue';
 import { RouterView } from 'vue-router';
 import { themeColor } from './context/keys';
 import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 
 const isDarkMode = ref(true);
 
@@ -25,8 +26,9 @@ provide(themeColor, {
 
 <template>
   <main :class="'w-full h-full overflow-hidden  ' + bodyClass()">
-    <Header :is-dark-mode="isDarkMode"/>
+    <Header/>
     <button class="absolute top-0 bg-red-800 p-1 rounded-md" @click="toggleThemeMode">theme</button>
-    <RouterView :is-dark-mode="isDarkMode"/>
+    <RouterView/>
+    <Footer/>
   </main>
 </template>
