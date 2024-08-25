@@ -29,7 +29,7 @@ function themeModeClass() {
           e sou um desenvolvedor.
         </pre>
         <a href="/Curriculo-Thiago.docx" download="Curriculo-Thiago.docx">
-          <button class="px-4 py-1 rounded-lg w-fit bg-purple-800 hover:opacity-90 duration-200 text-sm text-white flex items-center gap-1">Download CV <ion-icon class="w-4 h-4" name="arrow-down-circle-outline"></ion-icon></button>
+          <button class="px-4 py-1 rounded-lg w-fit bg-purple-800 hover:opacity-90 duration-200 text-sm text-white flex items-center gap-1">Download CV <ion-icon class="w-4 h-4 animate-bounce" name="arrow-down-circle-outline"></ion-icon></button>
         </a>
       </div>
       <picture>
