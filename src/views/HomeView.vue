@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { inject, ref } from 'vue';
+import Projects from '../components/Project.vue';
 import { themeColor } from '../context/keys';
 import { themeColorType } from '../types/Types';
-import thiagoPhoto from '/thiagoPhoto.jpeg';
-import Projects from '../components/Project.vue';
 import { projectsData } from '../data/ProjectsData';
+import thiagoPhoto from '/thiagoPhoto.jpeg';
 
 const themeMode = ref(inject<themeColorType>(themeColor) as themeColorType);
 
-console.log(themeMode.value.isDarkMode)
 
 function themeModeClass() {
     return {
@@ -22,17 +21,20 @@ function themeModeClass() {
 <template>
   <main class="container p-4 md:px-8 lg:px-16">
     <section class="mt-20 flex flex-col-reverse gap-8 justify-between items-center sm:flex-row">
-      <div>
+      <div class="flex flex-col gap-4">
         <pre :class="'whitespace-pre-line font-bold text-xl md:text-2xl font-sans ' + themeModeClass().titleColor">
-              Olá 👋,
-              Meu nome é
-              <span class="bg-gradient-to-r from-blue-400 to-pink-400 text-transparent inline-block bg-clip-text">Thiago Andrade</span>
-              e sou um desenvolvedor.
-          </pre>
-        </div>
-        <picture>
-          <img class="rounded-full w-28 border-[3px] border-gray-500 md:w-36" :src="thiagoPhoto" alt="">
-        </picture>
+          Olá 👋,
+          Meu nome é
+          <span class="bg-gradient-to-r from-blue-400 to-pink-400 text-transparent inline-block bg-clip-text">Thiago Andrade</span>
+          e sou um desenvolvedor.
+        </pre>
+        <a href="/Curriculo-Thiago.docx" download="Curriculo-Thiago.docx">
+          <button class="px-4 py-1 rounded-lg w-fit bg-purple-800 hover:opacity-90 duration-200 text-sm text-white flex items-center gap-1">Download CV <ion-icon class="w-4 h-4" name="arrow-down-circle-outline"></ion-icon></button>
+        </a>
+      </div>
+      <picture>
+        <img class="rounded-full w-28 border-[3px] border-gray-500 md:w-36" :src="thiagoPhoto" alt="">
+      </picture>
     </section>
     <section class="mt-20 flex flex-col gap-8 justify-center">
       <div class="text-center">
@@ -55,7 +57,7 @@ function themeModeClass() {
         <li>
           <ion-icon class="fill-green-700 w-10 h-10" name="logo-nodejs"></ion-icon>
         </li>
-        <li>
+        <li class="animate-spin">
           <ion-icon class="fill-blue-300 w-10 h-10" name="logo-react"></ion-icon>
         </li>
         <li>
