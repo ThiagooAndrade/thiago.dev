@@ -5,7 +5,6 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    darkMode: 'class',
     extend: {
       keyframes: {
         openingModal: {
