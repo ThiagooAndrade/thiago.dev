@@ -11,8 +11,6 @@ function bodyClass() {
   return isDarkMode.value ? 'bg-dark_mode' : 'bg-light_mode'; 
 }
 
-console.log("isDarkMode: " + isDarkMode.value)
-
 function toggleThemeMode() {
   isDarkMode.value = !isDarkMode.value;
   console.log("isDarkMode: " + isDarkMode.value)  
@@ -26,8 +24,7 @@ provide(themeColor, {
 
 <template>
   <main :class="'w-full h-full overflow-hidden  ' + bodyClass()">
-    <Header/>
-    <button class="absolute top-0 bg-red-800 p-1 rounded-md" @click="toggleThemeMode">theme</button>
+    <Header />
     <RouterView/>
     <Footer/>
   </main>
