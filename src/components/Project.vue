@@ -25,7 +25,6 @@ function themeModeClass() {
 </script>
 
 <template>
-      
         <div :class="'rounded-lg max-w-[250px] shadow-projectContainer shadow-black ' + themeModeClass().projectBackgroundColor">
           <picture>
             <img class="rounded-t-lg max-w-[250px] h-auto block" :src="props.img" alt="">
@@ -34,8 +33,8 @@ function themeModeClass() {
             <h3 :class="'text-lg ' + themeModeClass().projectTitleColor">{{ props.title }}</h3>
             <p class="text-darkContent text-xs text-justify">{{ props.description }}</p>
             <p :class="'text-xs ' + themeModeClass().titleColor">
-              <span class="text-sm">Tech stack:</span> 
-              {{ techStack }}</p>
+              <span class="text-xs">Tech stack:</span> 
+              {{ techStack.toUpperCase() }}</p>
             <div class="flex justify-between items-center mt-2">
               <span class="flex items-center gap-2">
                 <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
