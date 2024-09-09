@@ -1453,6 +1453,7 @@ snapshots:
   portfolio@file:(typescript@5.5.4):
     dependencies:
       vue: 3.4.37(typescript@5.5.4)
+      vue-router: 4.4.3(vue@3.4.37(typescript@5.5.4))
     transitivePeerDependencies:
       - typescript
 
