@@ -27,3 +27,23 @@ body {
   background-color: rgb(112, 26, 26);
   border-radius: 10px;
 }
+
+@media screen and (max-width: 767px) {
+
+  html,
+  body {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+    /* WebKit (Chrome, Safari, Edge) */
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+}
