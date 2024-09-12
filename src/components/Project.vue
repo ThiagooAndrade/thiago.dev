@@ -27,9 +27,9 @@ function themeModeClass() {
 <template>
         <div :class="'rounded-lg max-w-[250px] shadow-projectContainer shadow-black ' + themeModeClass().projectBackgroundColor">
           <picture>
-            <img class="rounded-t-lg max-w-[250px] h-auto block" :src="props.img" alt="">
+            <img class="rounded-t-lg max-w-[250px] min-h-[150px]  h-auto block" :src="props.img" alt="">
           </picture>
-          <div class="p-4 flex flex-col gap-2">
+          <div class="p-4 flex flex-col justify-between min-h-[180px]">
             <h3 :class="'text-lg ' + themeModeClass().projectTitleColor">{{ props.title }}</h3>
             <p class="text-darkContent text-xs text-justify">{{ props.description }}</p>
             <p :class="'text-xs ' + themeModeClass().titleColor">
