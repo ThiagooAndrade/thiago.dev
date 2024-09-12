@@ -13,7 +13,8 @@ function themeModeClass() {
   return {
     iconColor: themeMode.value.isDarkMode ? "#A7A7A7" : "#212020",
     titleColor: themeMode.value.isDarkMode ? 'text-gray-100' : "text-[#000000]",
-    paragraphColor: themeMode.value.isDarkMode ? '#413f3f' : "#"
+    paragraphColor: themeMode.value.isDarkMode ? '#413f3f' : "#",
+    contentHover: themeMode.value.isDarkMode ? "hover:text-[#736f6f]" : "hover:text-zinc-700"
   }
 }
 
@@ -30,8 +31,8 @@ function iconSwitcher() {
     <!-- nav desktop -->
     <nav class="flex gap-4 md:gap-8 items-center">
       <ul class="flex gap-2 text-xs sm:text-sm md:text-base font-semibold *:text-darkContent">
-        <li><RouterLink to="/home" class="hover:text-darkContentHover duration-200">Home</RouterLink></li>
-        <li><RouterLink to="/about" class="hover:text-darkContentHover duration-200">About</RouterLink></li>
+        <li><RouterLink to="/home" :class="'duration-200 ' + themeModeClass().contentHover">Home</RouterLink></li>
+        <li><RouterLink to="/about" :class="'duration-200 ' + themeModeClass().contentHover">About</RouterLink></li>
         <!-- <li><RouterLink to="/tech" class="hover:text-darkContentHover duration-200">Tech Stack</RouterLink></li>
         <li><RouterLink to="/projects" class="hover:text-darkContentHover duration-200">Projects</RouterLink></li>   
         <li><RouterLink to="/contact" class="hover:text-darkContentHover duration-200">Contact</RouterLink></li>    -->
