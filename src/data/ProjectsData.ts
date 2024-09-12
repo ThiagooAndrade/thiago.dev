@@ -12,5 +12,13 @@ export const projectsData = [
     githubUrl: "https://github.com/ThiagooAndrade/Meu-tempo",
     stack: ["HTML", "CSS", "JAVASCRIPT", "OpenWeatherMap API"],
   },
+  {
+    img: "portfolio.png",
+    title: "Portfolio",
+    description: "Meu portfolio para expor meus melhores projetos",
+    livePreviewUrl: "https://thiago-q4k2in6ow-thiago-andrades-projects.vercel.app",
+    githubUrl: "https://github.com/ThiagooAndrade/thiago.dev",
+    stack: ["HTML", "CSS", "VueJs"]
+  }
 ]
 
