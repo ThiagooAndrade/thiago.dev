@@ -51,6 +51,8 @@ export default {
         closingModal: "closingModal 0.5s ease-in-out forwards",
         slideTech: "slideTech 5s linear infinite",
         spin: "spin 3s linear infinite",
+        pulse: "pulse 3s linear infinite"
+
       },
       boxShadow: {
         'projectContainer': '0 0px 100px -50px rgba(0, 0, 0, 0.3)'
