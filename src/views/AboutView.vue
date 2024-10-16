@@ -25,7 +25,7 @@ function themeModeClass() {
             Desenvolvendo com as seguintes tecnologias: ReactJs para front-end, NodeJs ou Java SpringBoot para back-end.
           </p>
           <p :class="'text-sm lg:text-base mt-4 ' + themeModeClass().paragraphColor">
-            Tenho 18 anos, ingressei na faculdade e tive meu primeiro contato com programação a cerca de 1 ano, ainda não tive nenhuma experiência profissional, mas vou agarrar cada oportunidade.
+            Tenho 19 anos, ingressei na faculdade e tive meu primeiro contato com programação a cerca de 1 ano, ainda não tive nenhuma experiência profissional, mas vou agarrar cada oportunidade.
           </p>
         </div>
       </div>
