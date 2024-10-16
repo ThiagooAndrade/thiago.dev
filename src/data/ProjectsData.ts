@@ -16,7 +16,7 @@ export const projectsData = [
     img: "portfolio.png",
     title: "Portfolio",
     description: "Meu portfolio para expor meus melhores projetos",
-    livePreviewUrl: "https://thiago-q4k2in6ow-thiago-andrades-projects.vercel.app",
+    livePreviewUrl: "https://thiago-dev.vercel.app",
     githubUrl: "https://github.com/ThiagooAndrade/thiago.dev",
     stack: ["HTML", "CSS", "VueJs"]
   }
