@@ -2,8 +2,7 @@
 import { inject, ref } from 'vue';
 import { themeColorType } from '../types/Types';
 import { themeColor } from '../context/keys';
-import AboutEducation from '../components/AboutEducation.vue';
-import AboutWorkExperience from '../components/AboutWorkExperience.vue';
+import AboutInfo from '../components/AboutInfo.vue';
 
 
 const themeMode = ref(inject<themeColorType>(themeColor) as themeColorType);
@@ -34,16 +33,16 @@ function themeModeClass() {
     <section class="mt-10">
       <h2 :class="'text-xl font-bold md:text-3xl ' + themeModeClass().titleColor">Education</h2>
       <div>  
-       <AboutEducation title="Análise e Desenvolvimento de Sistemas" institution="Centro Universitário Estácio do Recife" period="Jan 2023 - July 2025"/>
+       <AboutInfo title="Análise e Desenvolvimento de Sistemas" institution="Centro Universitário Estácio do Recife" period="Jan 2023 - July 2025"/>
       </div>
       <div>
-        <AboutEducation title="Técnico em Redes de computadores" institution="Escola Técnica Estadual Governador Eduardo Campos" period="Jan 2020 - Des 2022"/>
+        <AboutInfo title="Técnico em Redes de computadores" institution="Escola Técnica Estadual Governador Eduardo Campos" period="Jan 2020 - Des 2022"/>
       </div>
     </section>
     <section class="mt-10">
       <h2 :class="'text-xl font-bold md:text-3xl ' + themeModeClass().titleColor">Work Experience</h2>
       <div>
-        <AboutWorkExperience title="Start" org="Rede Cidadã, Accenture" period="Sep 2024 - Des 2024"/>
+        <AboutInfo title="Start" institution="Rede Cidadã, Accenture" period="Sep 2024 - Des 2024"/>
       </div>
     </section>
   </main>
