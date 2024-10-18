@@ -24,12 +24,12 @@ function themeModeClass() {
     <h3 :class="'text-sm md:text-base ' + themeModeClass().paragraphColor">{{ props.title }}</h3>
     <div :class="'mt-4 flex justify-between items-center ' + themeModeClass().paragraphColor">
       <span class="text-xs md:text-sm">
-      <ion-icon name="business-outline"></ion-icon>
+        <ion-icon name="business-outline"></ion-icon>
         {{ props.institution }}
       </span>
-      <span class=" text-xs md:text-sm">
+      <span class="text-xs md:text-sm min-w-max">
         <ion-icon name="calendar-outline"></ion-icon>
-       {{ props.period }}
+        {{ props.period }}
       </span>
     </div>
     <span class="block mt-3 h-[1px] bg-gray-500"></span>
