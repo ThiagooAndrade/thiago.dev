@@ -4,7 +4,7 @@ import Projects from '../components/Project.vue';
 import { themeColor } from '../context/keys';
 import { themeColorType } from '../types/Types';
 import { projectsData } from '../data/ProjectsData';
-import thiagoPhoto from '/thiagoPhoto.jpeg';
+import thiagoPhoto from '/Foto-Thiago.jpeg';
 import TechStack from '../components/TechStack.vue';
 
 const themeMode = ref(inject<themeColorType>(themeColor) as themeColorType);
