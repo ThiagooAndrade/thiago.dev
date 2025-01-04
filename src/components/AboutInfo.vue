@@ -12,10 +12,10 @@ const props = defineProps<{
 const themeMode = ref(inject<themeColorType>(themeColor) as themeColorType);
 
 function themeModeClass() {
-    return {
-        titleColor: themeMode.value.isDarkMode ? "text-gray-200" : "text-[#42446E]",
-        paragraphColor: themeMode.value.isDarkMode ? "text-[#aeb5b0]" : "text-[#666666]",
-    }
+  return {
+    titleColor: themeMode.value.isDarkMode ? "text-gray-200" : "text-[#42446E]",
+    paragraphColor: themeMode.value.isDarkMode ? "text-[#aeb5b0]" : "text-[#666666]",
+  }
 }
 </script>
 

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
@@ -52,7 +53,6 @@ export default {
         slideTech: "slideTech 5s linear infinite",
         spin: "spin 3s linear infinite",
         pulse: "pulse 3s linear infinite"
-
       },
       boxShadow: {
         'projectContainer': '0 0px 100px -50px rgba(0, 0, 0, 0.3)'
