@@ -2,7 +2,6 @@
 import Projects from "../components/Project.vue";
 import TechStack from '../components/TechStack.vue';
 import { projectsData } from '../data/ProjectsData';
-import thiagoPhoto from "/foto-Thiago.jpeg";
 
 </script>
 
@@ -23,7 +22,7 @@ import thiagoPhoto from "/foto-Thiago.jpeg";
         </a>
       </div>
       <picture>
-        <img class="rounded-full w-28 border-[3px] border-gray-500 md:w-36" :src="thiagoPhoto" alt="">
+        <img class="rounded-full w-28 border-[3px] border-gray-500 md:w-36" src="/foto-Thiago.jpeg" alt="">
       </picture>
     </section>
     <section class="mt-20 flex flex-col gap-8 justify-center">
