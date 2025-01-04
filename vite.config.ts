@@ -5,8 +5,9 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   build: {
+    outDir: 'dist',
     rollupOptions: {
-      external: ['/foto-Thiago.jpeg'], // Adicione o caminho correto para a imagem
+      input: 'index.html',
     },
   },
 })
