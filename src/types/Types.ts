@@ -9,7 +9,7 @@ export type projectsDataType = {
   img: string;
   title: string;
   description: string;
+  livePreviewUrl: string;
   githubUrl: string;
-  livePreview: string;
   stack: string[];
 }

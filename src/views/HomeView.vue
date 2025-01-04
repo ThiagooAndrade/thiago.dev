@@ -40,7 +40,7 @@ import thiagoPhoto from "/foto-Thiago.jpeg";
       </div>
       <div class="mt-20 grid grid-flow-row place-items-center gap-10 md:grid-cols-2 xl:grid-cols-3">
         <Projects v-for="project in projectsData" :key="project.title" :title="project.title"
-          :description="project.description" :img="project.img" :live-preview="project.livePreviewUrl"
+          :description="project.description" :img="project.img" :live-preview-url="project.livePreviewUrl"
           :github-url="project.githubUrl" :stack="project.stack" />
       </div>
     </section>

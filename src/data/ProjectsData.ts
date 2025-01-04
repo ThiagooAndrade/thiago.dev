@@ -1,9 +1,10 @@
+import { projectsDataType } from './../types/Types';
 export const links = {
   github: "https://github.com/ThiagooAndrade",
   linkedin: "https://www.linkedin.com/in/thiagoo-andrade/",
 }
 
-export const projectsData = [
+export const projectsData: projectsDataType[] = [
   {
     img: "meutempo.png",
     title: "Meu Tempo",
@@ -19,6 +20,14 @@ export const projectsData = [
     livePreviewUrl: "https://thiago-dev.vercel.app",
     githubUrl: "https://github.com/ThiagooAndrade/thiago.dev",
     stack: ["HTML", "CSS", "VueJs"]
+  },
+  {
+    img: "Meupet.jpeg",
+    title: "Meu Pet",
+    description: "Projeto feito para um hackathon com o tema de animais em situação de rua",
+    livePreviewUrl: "",
+    githubUrl: "https://github.com/MeuPet-Start",
+    stack: ["ReactJs, SpringBoot, Mysql"],
   }
 ]
 
