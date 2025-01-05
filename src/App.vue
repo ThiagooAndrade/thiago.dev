@@ -8,7 +8,7 @@ import Footer from './components/Footer.vue';
 const isDarkMode = ref(true);
 
 function toggleThemeMode() {
-  document.documentElement.classList.toggle('dark'); // Ativa o modo escuro
+  document.documentElement.classList.toggle('dark');
   isDarkMode.value = !isDarkMode.value;
   console.log("isDarkMode: " + isDarkMode.value)  
 }
