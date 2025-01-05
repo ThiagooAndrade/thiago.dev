@@ -30,9 +30,9 @@ function themeModeClass() {
       </span>
       <span class="flex items-center gap-1 text-xs min-w-max md:text-sm">
         <ion-icon name="calendar-outline"></ion-icon>
-          {{ props.period }}
-          <ion-icon v-if="props.duration" class="ml-2" name="time-outline"></ion-icon>
-          {{ props.duration }}
+        {{ props.period }}
+        <ion-icon v-if="props.duration" class="ml-2" name="time-outline"></ion-icon>
+        {{ props.duration }}
       </span>
     </div>
     <span class="block mt-3 h-[1px] bg-gray-500"></span>
