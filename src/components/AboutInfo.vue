@@ -6,7 +6,8 @@ import { themeColor } from '../context/keys';
 const props = defineProps<{
   title: string;
   institution: string;
-  period: string;
+  period?: string;
+  duration?: string;
 }>();
 
 const themeMode = ref(inject<themeColorType>(themeColor) as themeColorType);
@@ -27,9 +28,11 @@ function themeModeClass() {
         <ion-icon name="business-outline"></ion-icon>
         {{ props.institution }}
       </span>
-      <span class="text-xs md:text-sm min-w-max">
+      <span class="flex items-center gap-1 text-xs min-w-max md:text-sm">
         <ion-icon name="calendar-outline"></ion-icon>
-        {{ props.period }}
+          {{ props.period }}
+          <ion-icon v-if="props.duration" class="ml-2" name="time-outline"></ion-icon>
+          {{ props.duration }}
       </span>
     </div>
     <span class="block mt-3 h-[1px] bg-gray-500"></span>
