@@ -10,7 +10,6 @@ const isDarkMode = ref(true);
 function toggleThemeMode() {
   document.documentElement.classList.toggle('dark');
   isDarkMode.value = !isDarkMode.value;
-  console.log("isDarkMode: " + isDarkMode.value)  
 }
 
 provide(themeColor, {
