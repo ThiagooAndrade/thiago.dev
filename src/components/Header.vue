@@ -31,9 +31,9 @@ function iconSwitcher() {
       <ul class="flex gap-2 text-xs sm:text-sm md:text-base font-semibold *:text-darkContent">
         <li><RouterLink to="/home" class="duration-200 hover:text-zinc-700 dark:hover:text-[#736f6f]">Home</RouterLink></li>
         <li><RouterLink to="/about" class="duration-200 hover:text-zinc-700 dark:hover:text-[#736f6f]">About</RouterLink></li>
+        <li><RouterLink to="/contact" class="hover:text-darkContentHover duration-200">Contact</RouterLink></li>
         <!-- <li><RouterLink to="/tech" class="hover:text-darkContentHover duration-200">Tech Stack</RouterLink></li>
-        <li><RouterLink to="/projects" class="hover:text-darkContentHover duration-200">Projects</RouterLink></li>   
-        <li><RouterLink to="/contact" class="hover:text-darkContentHover duration-200">Contact</RouterLink></li>    -->
+        <li><RouterLink to="/projects" class="hover:text-darkContentHover duration-200">Projects</RouterLink></li> -->  
       </ul>
       <div class="flex gap-2 md:gap-4 justify-center items-center">
         <a :href="links.github" class="hidden animate-pulse sm:block">

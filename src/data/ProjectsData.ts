@@ -1,7 +1,7 @@
 import { projectsDataType } from './../types/Types';
 export const links = {
   github: "https://github.com/ThiagooAndrade",
-  linkedin: "https://www.linkedin.com/in/thiagoo-andrade/",
+  linkedin: "https://www.linkedin.com/in/thiago-andrade-060b54290",
 }
 
 export const projectsData: projectsDataType[] = [
